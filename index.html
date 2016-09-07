@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Rain演唱会</title>
+	<link rel="stylesheet" href="css/animations.css" />
+	<link rel="stylesheet" href="css/animate.min.css" />
+	<script type="text/javascript" src="js/zepto.min.js" ></script>
+	<script type="text/javascript" src="js/touch.js" ></script>
+	<script type="text/javascript" src="js/index.js" ></script>
+	<style>
+		*{margin:0; padding:0;}
+		html,body{width:100%; height:100%;}
+		.page{width:100%; height:100%; position:absolute; left:0; top:0;}
+		.page img{position:absolute; left:0; top:0;}
+		.page .hua{width:40px; position:absolute; left:50%; top:88%; margin-left:-20px; opacity:0.7;}
+		.page-1-1{width:100%; height:100%; background:url(images/rain1_bg.png) no-repeat left top; background-size:cover;}
+		.page-1-1 .img1{width:68.8%; left:17%; top:48.2%;}
+		.page-1-1 .img2{width:50%; left:24.9%; top:70%;}
+		.page-2-1{width:100%; height:100%; background:url(images/rain2_bg.png) no-repeat left top; background-size:cover;}
+		.page-2-1 .call{width:24.3%; left:24%; top:9%;}
+		.page-2-1 .text{width:100%; top:4.6%}
+		.page-3-1{width:100%; height:100%; background:url(images/rain3_bg.png) no-repeat left top; background-size:cover;}
+		.page-3-1 .img1{width:24.3%; left:13%; top:10.5%;}
+		.page-3-1 .img2{width:23.5%; left:38.4%; top:14.1%;}
+		.page-3-1 .img3{width:23.5%; left:63.1%; top:6.9%;}
+		.page-3-1 .img4{width:16.2%; left:37.3%; top:63.1%;}
+		.page-3-1 .img5{width:75.3%; left:9.6%; top:60.2%;}
+		.page-3-1 .line1{width:23.7%; left:70.9%; top:56.8%;}
+		.page-3-1 .line2{width:11.8%; left:88.1%; top:62.9%;}
+		.page-3-1 .line3{width:7.4%; left:0%; top:89.3%;}
+		.page-3-1 .line4{width:15.4%; left:9%; top:91.4%;}
+		.page-4-1{width:100%; height:100%; background:url(images/rain3_bg.png) no-repeat left top; background-size:cover;}
+		.page-4-1 .img0{width:28.4%; left:46.5%; top:17.7%;}
+		.page-4-1 .img1{width:72.2%; left:9.7%; top:9.2%;}
+		.page-4-1 .img2{width:30%; left:13.4%; top:30.7%;}
+		.page-4-1 .img3{width:30%; left:56.5%; top:30.7%;}
+		.page-4-1 .img4{width:30%; left:13.4%; top:62.5%;}
+		.page-4-1 .img5{width:30%; left:56.5%; top:62.5%;}
+		.hide{display:none;}
+	</style>
+</head>
+<body>
+	<div class="page page-1-1">
+		<div class="wrap">
+			<img class="img1 pt-page-moveFromLeft" src="images/rain1_img1.png" /> 
+			<img class="img2 pt-page-moveFromBottom" src="images/rain1_img2.png" />
+			<img class="hua pt-page-moveIconUp" src="images/arrow.png" />
+		</div>
+	</div>
+	<div class="page page-2-1 hide">
+		<div class="wrap">
+			<img class="call pt-page-moveFromLeftFade pt-page-delay500 hide" src="images/rain2_call.png" /> 
+			<img class="text pt-page-moveFromTop hide" src="images/rain2_text.png" />
+			<img class="hua pt-page-moveIconUp" src="images/arrow.png" />
+		</div>
+	</div>
+	<div class="page page-3-1 hide">
+		<div class="wrap">
+			<img class="img1 pt-page-moveFromTop hide" src="images/rain3_L.png" /> 
+			<img class="img2 pt-page-moveFromBottom hide" src="images/rain3_M.png" /> 
+			<img class="img3 pt-page-moveFromTop hide" src="images/rain3_R.png" />
+			<img class="img4 pt-page-moveFromRight hide" src="images/rain3_img4.png" />
+			<img class="img5 pt-page-moveFromBottom hide" src="images/rain3_img5.png" />
+			<img class="line1 pt-page-rotatePullTop pt-page-delay500 hide" src="images/rain3_line1.png" />
+			<img class="line2 pt-page-rotatePullRight pt-page-delay500 hide" src="images/rain3_line2.png" />
+			<img class="line3 pt-page-moveFromLeft pt-page-delay500 hide" src="images/rain3_line3.png" />
+			<img class="line4 pt-page-moveFromLeft pt-page-delay500 hide" src="images/rain3_line4.png" />
+			<img class="hua pt-page-moveIconUp" src="images/arrow.png" />
+		</div>
+	</div>
+	<div class="page page-4-1 hide">
+		<div class="wrap">
+			<img class="img0 animated bounceIn pt-page-delay500 hide" src="images/rain4_img0.png" /> 
+			<img class="img1 pt-page-moveFromTop hide" src="images/rain4_img1.png" /> 
+			<img class="img2 pt-page-moveFromBottom hide" src="images/rain4_img2.png" /> 
+			<img class="img3 pt-page-moveFromLeft hide" src="images/rain4_img3.png" />
+			<img class="img4 pt-page-moveFromRight hide" src="images/rain4_img4.png" />
+			<img class="img5 pt-page-moveFromTop hide" src="images/rain4_img5.png" />
+		</div>
+	</div>
+</body>
+</html>
